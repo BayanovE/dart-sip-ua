@@ -377,7 +377,8 @@ class SIPUAHelper extends EventManager {
         'tcpCandidatePolicy':
             (_uaSettings?.tcpCandidatePolicy ?? TcpCandidatePolicy.ENABLED)
                 .toParameterString(),
-        'iceCandidatePoolSize': _uaSettings?.iceCandidatePoolSize
+        'iceCandidatePoolSize': _uaSettings?.iceCandidatePoolSize,
+        'enableDscp': true
       },
       'mediaConstraints': <String, dynamic>{
         'audio': true,
